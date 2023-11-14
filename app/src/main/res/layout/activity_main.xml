@@ -1,0 +1,71 @@
+<!-- activity_main.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewSpeedometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Speed: 0 m/s (0 km/h)"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSpeedLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpeedometer"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSpeedLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Speed Limit (km/h)"
+            android:inputType="number"
+            android:maxLength="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSetLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Limit"
+        android:layout_below="@id/textInputLayoutSpeedLimit"
+        android:layout_marginTop="16dp"/>
+
+    <Switch
+        android:id="@+id/switchAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Alarm"
+        android:layout_below="@id/buttonSetLimit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_below="@id/switchAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/clearDataButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Ask for Location Permission"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_below="@id/switchAlarm" />-->
+
+</RelativeLayout>

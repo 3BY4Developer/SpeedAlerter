@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpeedAlerter</string>
+    <string name="location_permission_denied_error">Location permission denied. Please grant the necessary permissions to use this feature.</string>
+
+</resources>
